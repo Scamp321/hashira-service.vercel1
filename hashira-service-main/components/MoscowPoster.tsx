@@ -338,6 +338,15 @@ export default function MoscowPoster({ dates, phone, showPhone }: TextContentPro
 						</p>
 					</div>
 				)}
+				{/* Телефон - показываем только если включен чекбокс */}
+				{showPhone && (
+					<div className="absolute w-[450px] left-[72.65px] top-[710px] text-center">
+						<p className="text-[22px] leading-[27px]">
+							По всем вопросам обращайтесь по телефону:{" "}
+							<span className="font-bold">{phone}</span>
+						</p>
+					</div>
+				)}
 
 				{/* Информация о ГКУ НТУ */}
 				<div className="absolute w-[450px] left-[72.65px] top-[778px] text-center">
